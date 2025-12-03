@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeNexus Collective | Luxury Fashion & Marketing</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'luxe-gold': '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-light">
+    <luxury-navigation></luxury-navigation>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen w-full overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 z-10"></div>
+            <div class="absolute inset-0 bg-black/30 z-5"></div>
+            <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+                <source src="http://static.photos/fashion/1920x1080/1" type="video/mp4">
+            </video>
+            
+            <div class="relative z-20 flex items-center justify-center h-full text-center text-white px-6">
+                <div class="max-w-5xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 tracking-tight">
+                        Elevating Luxury Brands
+                    </h1>
+                    <p class="text-xl md:text-2xl font-light mb-12 opacity-90 max-w-3xl mx-auto">
+                        Where timeless elegance meets digital innovation in fashion marketing
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                        <a href="#audit" class="bg-luxe-gold text-black px-12 py-5 font-medium hover:bg-yellow-600 transition-all duration-500 transform hover:scale-105 shadow-2xl">
+                            Book Your Brand Audit
+                        </a>
+                        <a href="#portfolio" class="border-2 border-white text-white px-12 py-5 font-medium hover:bg-white hover:text-black transition-all duration-500 transform hover:scale-105">
+                            Discover Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+                <i data-feather="chevron-down" class="text-white"></i>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-gray-950 text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6">Our Services</h2>
+                    <div class="w-24 h-1 bg-luxe-gold mx-auto"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div class="group relative overflow-hidden bg-gray-900 p-10 hover:bg-gray-800 transition-all duration-700 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-luxe-gold/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-luxe-gold/30 transition-colors duration-500">
+                        <i data-feather="award" class="text-luxe-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium mb-4">Brand Strategy</h3>
+                    <p class="text-gray-400 leading-relaxed">Crafting distinctive luxury identities that captivate discerning audiences</p>
+                </div>
+                
+                <div class="group relative overflow-hidden bg-gray-900 p-10 hover:bg-gray-800 transition-all duration-700 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-luxe-gold/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-luxe-gold/30 transition-colors duration-500">
+                        <i data-feather="camera" class="text-luxe-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium mb-4">Creative Production</h3>
+                    <p class="text-gray-400 leading-relaxed">Stunning visual storytelling that elevates brand narratives</p>
+                    </div>
+                
+                <div class="group relative overflow-hidden bg-gray-900 p-10 hover:bg-gray-800 transition-all duration-700 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-luxe-gold/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-luxe-gold/30 transition-colors duration-500">
+                        <i data-feather="shopping-bag" class="text-luxe-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium mb-4">Digital Commerce</h3>
+                    <p class="text-gray-400 leading-relaxed">Sophisticated e-commerce experiences for luxury retail</p>
+                    </div>
+                
+                <div class="group relative overflow-hidden bg-gray-900 p-10 hover:bg-gray-800 transition-all duration-700 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-luxe-gold/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-luxe-gold/30 transition-colors duration-500">
+                        <i data-feather="trending-up" class="text-luxe-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium mb-4">Performance Marketing</h3>
+                    <p class="text-gray-400 leading-relaxed">Data-driven campaigns that drive growth and engagement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6 text-black">Our Portfolio</h2>
+                    <div class="w-24 h-1 bg-luxe-gold mx-auto"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="aspect-[4/5] bg-gray-100 group overflow-hidden relative">
+                        <img src="http://static.photos/fashion/600x750/1" alt="Luxury Campaign" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                        <h4 class="text-xl font-medium text-white mb-2">Maison Élégante</h4>
+                        <p class="text-gray-300 text-sm">Complete brand transformation</p>
+                    </div>
+                </div>
+                
+                <div class="aspect-[4/5] bg-gray-100 group overflow-hidden relative">
+                    <img src="http://static.photos/fashion/600x750/2" alt="Fashion Retail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                        <h4 class="text-xl font-medium text-white mb-2">Opulent Retail</h4>
+                        <p class="text-gray-300 text-sm">E-commerce platform launch</p>
+                    </div>
+                </div>
+                
+                <div class="aspect-[4/5] bg-gray-100 group overflow-hidden relative">
+                    <img src="http://static.photos/fashion/600x750/3" alt="Digital Marketing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                        <h4 class="text-xl font-medium text-white mb-2">Digital Renaissance</h4>
+                        <p class="text-gray-300 text-sm">Social media revolution</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#portfolio-full" class="border-2 border-black text-black px-8 py-4 font-medium hover:bg-black hover:text-white transition-all duration-500">
+                            View Complete Portfolio
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section id="approach" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 class="text-4xl md:text-5xl font-serif mb-8 text-black">Our Philosophy</h2>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            We believe luxury is not just about products—it's about creating unforgettable experiences. 
+                            Our approach blends artistic vision with strategic precision.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-luxe-gold rounded-full flex items-center justify-center mt-1">
+                                <span class="text-black text-sm font-medium">01</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium mb-2">Deep Understanding</h4>
+                                <p class="text-gray-600">Immerse ourselves in your brand's DNA and heritage</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-luxe-gold rounded-full flex items-center justify-center mt-1">
+                                <span class="text-black text-sm font-medium">02</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium mb-2">Artistic Excellence</h4>
+                                <p class="text-gray-600">Create visually stunning narratives that embody luxury</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-luxe-gold rounded-full flex items-center justify-center mt-1">
+                                <span class="text-black text-sm font-medium">03</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-medium mb-2">Strategic Implementation</h4>
+                                <p class="text-gray-600">Execute with precision across all digital touchpoints</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-1 lg:order-2 aspect-square bg-gray-200 rounded-full overflow-hidden">
+                        <img src="http://static.photos/studio/600x600/1" alt="Our Process" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-black text-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="aspect-square bg-gray-800 rounded-full overflow-hidden">
+                        <img src="http://static.photos/people/600x600/1" alt="Our Team" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-serif mb-8">About LuxeNexus</h2>
+                        <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                            Founded by industry veterans from Paris, Milan, and New York, LuxeNexus Collective 
+                            represents the pinnacle of luxury fashion marketing expertise.
+                        </p>
+                        <p class="text-lg text-gray-400 mb-8">
+                            With collective experience spanning luxury retail houses, fashion publications, 
+                            and digital innovation, we bring unparalleled insight to every project.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <div class="text-3xl font-serif text-luxe-gold mb-2">50+</div>
+                                <p class="text-gray-400">Luxury Brands Transformed</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-serif text-luxe-gold mb-2">15</div>
+                                <p class="text-gray-400">Years of Excellence</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-serif text-luxe-gold mb-2">3</div>
+                                <p class="text-gray-400">Global Creative Hubs</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-serif text-luxe-gold mb-2">100M+</div>
+                                <p class="text-gray-400">Audience Reach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Audit Section -->
+        <section id="audit" class="py-24 bg-gray-950 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-serif mb-6">Complimentary Brand Audit</h2>
+                        <div class="w-24 h-1 bg-luxe-gold mx-auto mb-6"></div>
+                        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                            Let us analyze your current digital presence and identify opportunities 
+                            for elevated growth and engagement.
+                        </p>
+                    </div>
+                    
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <label class="block text-sm font-medium mb-3 text-gray-400">Full Name *</label>
+                            <input type="text" class="w-full bg-gray-800 border border-gray-700 px-6 py-4 focus:outline-none focus:border-luxe-gold transition-all duration-300" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-3 text-gray-400">Email Address *</label>
+                            <input type="email" class="w-full bg-gray-800 border border-gray-700 px-6 py-4 focus:outline-none focus:border-luxe-gold transition-all duration-300" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-3 text-gray-400">Brand Name *</label>
+                            <input type="text" class="w-full bg-gray-800 border border-gray-700 px-6 py-4 focus:outline-none focus:border-luxe-gold transition-all duration-300" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-3 text-gray-400">Current Website</label>
+                            <input type="url" class="w-full bg-gray-800 border border-gray-700 px-6 py-4 focus:outline-none focus:border-luxe-gold transition-all duration-300">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium mb-3 text-gray-400">Your Vision</label>
+                            <textarea rows="5" class="w-full bg-gray-800 border border-gray-700 px-6 py-4 focus:outline-none focus:border-luxe-gold transition-all duration-300" placeholder="Tell us about your brand aspirations..."></textarea>
+                        </div>
+                        <div class="md:col-span-2 text-center">
+                            <button type="submit" class="bg-luxe-gold text-black px-16 py-5 font-medium hover:bg-yellow-600 transition-all duration-500 transform hover:scale-105">
+                                Request Your Audit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Feed Section -->
+        <section id="social-feed" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6 text-black">Latest Inspiration</h2>
+                <div class="w-24 h-1 bg-luxe-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1">
+                        <div class="aspect-square bg-gray-100 group overflow-hidden">
+                            <img src="http://static.photos/fashion/400x400/1" alt="Social Content" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="aspect-square bg-gray-100 group overflow-hidden">
+                            <img src="http://static.photos/fashion/400x400/2" alt="Social Content" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="aspect-square bg-gray-100 group overflow-hidden">
+                            <img src="http://static.photos/fashion/400x400/3" alt="Social Content" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="aspect-square bg-gray-100 group overflow-hidden">
+                            <img src="http://static.photos/fashion/400x400/4" alt="Social Content" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="aspect-square bg-gray-100 group overflow-hidden">
+                            <img src="http://static.photos/fashion/400x400/5" alt="Social Content" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="aspect-square bg-gray-100 group overflow-hidden">
+                            <img src="http://static.photos/fashion/400x400/6" alt="Social Content" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <luxury-footer></luxury-footer>
+
+    <!-- Floating CTA -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="#audit" class="bg-luxe-gold text-black px-8 py-4 font-medium hover:bg-yellow-600 transition-all duration-500 transform hover:scale-105 shadow-2xl flex items-center gap-3">
+            <i data-feather="star"></i>
+            Book Audit
+        </a>
+    </div>
+
+    <script src="components/luxury-navigation.js"></script>
+    <script src="components/luxury-footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
